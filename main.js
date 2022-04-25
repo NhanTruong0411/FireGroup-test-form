@@ -6,6 +6,7 @@ const app = Vue.createApp({
          name: null,
          email: null,
          phone: null,
+         contact: null,
       };
    },
 
@@ -16,7 +17,8 @@ const app = Vue.createApp({
          const userInput = {
             name: this.name,
             email: this.email,
-            phone: this.phone
+            phone: this.phone,
+            contact: this.contact
          }
 
          let userStorage = JSON.parse(window.localStorage.getItem('user'));
@@ -82,6 +84,7 @@ const app = Vue.createApp({
          this.name = null,
          this.email = null,
          this.phone = null
+         this.contact = null
       }
    },
 
